@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,500;0,700;1,500;1,700;1,900&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+} 
+:root{
+    --selected:#359fa3;
+    --text-color:#777;
+    --white:#fff;
+    --dark-text:#1c2042;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:var(--selected);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+img{
+width: 100%;
+height: auto;
+
+} 
+.movie-container{
+    margin: 1.2rem  0;
+    
+}
+#movie{
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.4rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding: 0.4rem  0;
+    width: 25rem;
+}
+.seat{
+    background-color: rgb(238, 241, 12);
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+
+}
+.seat:nth-of-type(3){
+    margin-left: 1.5em;
+}
+.seat:nth-last-of-type(3){
+    margin-left: 1.5rem;
+}
+.seat:hover{
+    cursor: pointer;
+}
+.showcase-container.seat:hover{
+    cursor:default;
+}
+.seat.occupied{
+    cursor: default;
+}
+.seat.selected{
+ background-color: #1c2042;
+}
+.seat.occupied{
+    background-color: #fff;
+}
+.showcase-container{
+    width: 30rem;
+    background-color: rgba(5,5,5,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    padding: 0.3rem;
+    color: beige;
+}
+.showcase-container li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 5px;
+}
+.screen-container{
+    width: 30rem;
+    padding: 3rem;
+    perspective: 1000px;
+    justify-content: center;
+    align-self: center;
+
+}
+.screen{
+    background-color: #fff;
+    height: 7rem;
+    width: 100%;
+    margin: 1.2rem o;
+    transform: rotateX(-45deg);
+    box-shadow: 0,3px,10px,rgba(255,255,255,255);
+}
+.row{
+    display: flex;
+    padding-left: 2rem;
+
+}
+.description{
+    margin: 0.6rem 0.6rem;color: bisque;
+
+}
+.bold{
+    font-weight: 900;
+    color:#1c2042;
+    
+
+}
